@@ -1,0 +1,214 @@
+---
+swagger: "2.0"
+x-collection-name: moltin
+x-complete: 1
+info:
+  title: Moltin
+  description: -welcomethis-is-a-place-to-put-general-notes-and-extra-information-for-internal-use-to-get-started-designingdocumenting-this-api-select-a-version-on-the-left-
+  version: 1.0.0
+host: api.moltin.com
+basePath: /
+schemes:
+- http
+produces:
+- application/json
+consumes:
+- application/json
+paths:
+  /v2/brands/{brandID}/relationships/parent:
+    put:
+      summary: Update Parent Brand Relationship
+      description: Update parent brand relationship.
+      operationId: V2BrandsRelationshipsParentByBrandIDPut
+      x-api-path-slug: v2brandsbrandidrelationshipsparent-put
+      parameters:
+      - in: body
+        name: Body
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: brandID
+      - in: header
+        name: Content-Type
+      responses:
+        200:
+          description: Successful response
+      tags:
+      - Parent
+      - Brands
+      - Relationship
+    post:
+      summary: Create Parent Brand Relationship
+      description: Create parent brand relationship.
+      operationId: V2BrandsRelationshipsParentByBrandIDPost
+      x-api-path-slug: v2brandsbrandidrelationshipsparent-post
+      parameters:
+      - in: body
+        name: Body
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: brandID
+      - in: header
+        name: Content-Type
+      responses:
+        200:
+          description: Successful response
+      tags:
+      - Parent
+      - Brands
+      - Relationship
+    delete:
+      summary: Delete Parent Brand Relationship
+      description: Delete parent brand relationship.
+      operationId: V2BrandsRelationshipsParentByBrandIDDelete
+      x-api-path-slug: v2brandsbrandidrelationshipsparent-delete
+      parameters:
+      - in: path
+        name: brandID
+      - in: header
+        name: Content-Type
+      responses:
+        200:
+          description: Successful response
+      tags:
+      - Parent
+      - Brands
+      - Relationship
+  /v2/collections/{collectionID}/relationships/parent:
+    put:
+      summary: Update Parent Collection Relationship
+      description: Update parent collection relationship.
+      operationId: V2CollectionsRelationshipsParentByCollectionIDPut
+      x-api-path-slug: v2collectionscollectionidrelationshipsparent-put
+      parameters:
+      - in: header
+        name: Accept
+      - in: body
+        name: Body
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: collectionID
+      - in: header
+        name: Content-Type
+      responses:
+        200:
+          description: Successful response
+      tags:
+      - Parent
+      - Collection
+      - Relationship
+    post:
+      summary: Create Parent Collection Relationship
+      description: Create parent collection relationship.
+      operationId: V2CollectionsRelationshipsParentByCollectionIDPost
+      x-api-path-slug: v2collectionscollectionidrelationshipsparent-post
+      parameters:
+      - in: header
+        name: Accept
+      - in: body
+        name: Body
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: collectionID
+      - in: header
+        name: Content-Type
+      responses:
+        200:
+          description: Successful response
+      tags:
+      - Parent
+      - Collection
+      - Relationship
+    delete:
+      summary: Delete Parent Collection Relationship
+      description: Delete parent collection relationship.
+      operationId: V2CollectionsRelationshipsParentByCollectionIDDelete
+      x-api-path-slug: v2collectionscollectionidrelationshipsparent-delete
+      parameters:
+      - in: header
+        name: Accept
+      - in: path
+        name: collectionID
+      - in: header
+        name: Content-Type
+      responses:
+        200:
+          description: Successful response
+      tags:
+      - Parent
+      - Collection
+      - Relationship
+  /v2/categories/{parentCatID}/relationships/parent:
+    put:
+      summary: Update Parent Category Parent
+      description: Update parent category parent.
+      operationId: V2CategoriesRelationshipsParentByParentCatIDPut
+      x-api-path-slug: v2categoriesparentcatidrelationshipsparent-put
+      parameters:
+      - in: header
+        name: Accept
+      - in: body
+        name: Body
+        schema:
+          $ref: '#/definitions/holder'
+      - in: header
+        name: Content-Type
+      - in: path
+        name: parentCatID
+      responses:
+        200:
+          description: Successful response
+      tags:
+      - Parent
+      - Category
+      - Parent
+  /v2/categories/{categoryID}/relationships/categories:
+    post:
+      summary: Create Parent Category Relationship
+      description: Using this endpoint you can create a relationship between a category
+        and a parent category. When returning the category tree, you will see this
+        relationship in place.
+      operationId: V2CategoriesRelationshipsCategoriesByCategoryIDPost
+      x-api-path-slug: v2categoriescategoryidrelationshipscategories-post
+      parameters:
+      - in: header
+        name: Accept
+      - in: body
+        name: Body
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: categoryID
+      - in: header
+        name: Content-Type
+      responses:
+        200:
+          description: Successful response
+      tags:
+      - Parent
+      - Category
+      - Relationship
+  /v2/categories/{categoryID}/relationships/parent:
+    delete:
+      summary: Delete Parent Category Parent
+      description: Delete parent category parent.
+      operationId: V2CategoriesRelationshipsParentByCategoryIDDelete
+      x-api-path-slug: v2categoriescategoryidrelationshipsparent-delete
+      parameters:
+      - in: header
+        name: Accept
+      - in: path
+        name: categoryID
+      - in: header
+        name: Content-Type
+      responses:
+        200:
+          description: Successful response
+      tags:
+      - Parent
+      - Category
+      - Parent
+---
