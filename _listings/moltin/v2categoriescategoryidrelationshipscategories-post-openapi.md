@@ -1,9 +1,12 @@
+---
 swagger: "2.0"
 x-collection-name: moltin
-x-complete: 1
+x-complete: 0
 info:
-  title: Moltin
-  description: -welcomethis-is-a-place-to-put-general-notes-and-extra-information-for-internal-use-to-get-started-designingdocumenting-this-api-select-a-version-on-the-left-
+  title: Moltin API Create Parent Category Relationship
+  description: Using this endpoint you can create a relationship between a category
+    and a parent category. When returning the category tree, you will see this relationship
+    in place.
   version: 1.0.0
 host: api.moltin.com
 basePath: /
@@ -190,23 +193,17 @@ paths:
       - Parent
       - Category
       - Relationship
-  /v2/categories/{categoryID}/relationships/parent:
-    delete:
-      summary: Delete Parent Category Parent
-      description: Delete parent category parent.
-      operationId: V2CategoriesRelationshipsParentByCategoryIDDelete
-      x-api-path-slug: v2categoriescategoryidrelationshipsparent-delete
-      parameters:
-      - in: header
-        name: Accept
-      - in: path
-        name: categoryID
-      - in: header
-        name: Content-Type
-      responses:
-        200:
-          description: Successful response
-      tags:
-      - Parent
-      - Category
-      - Parent
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---

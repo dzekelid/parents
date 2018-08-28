@@ -1,0 +1,90 @@
+{
+	"name": "Streadata.io API Gallery - Parents",
+	"description": "This is a repository of parents APIs, self-contained as a Github repository, with HTML and YAML representations of the APIs and their surrounding operations.",
+	"image": "http://template.streamdata.gallery/assets/parents.png",
+	"created": "2018-02-24",
+	"modified": "2018-08-28",
+	"url": "http://parents.streamdata.gallery/apis.json",
+	"specificationVersion": "0.14",
+	"apis": [
+		{
+			"name": "Atlassian",
+			"x-api-slug": "atlassian",
+			"description": "Millions of users globally rely on Atlassian products every day for improving software development, project management, collaboration, and code quality.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/691-atlassian.jpg",
+			"humanURL": "http://atlassian.com/",
+			"baseURL": "https:////",
+			"tags": "Parents",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/parents/master/_listings/atlassian/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "ARIN",
+			"x-api-slug": "arin",
+			"description": "The American Registry for Internet Numbers (ARIN) is a Regional Internet Registry (RIR) incorporated in the Commonwealth of Virginia, USA. ARIN is one of five (5) RIRs. Like the other RIRs, ARIN:    Provides services related to the technical coordinati...",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1381-arin.jpg",
+			"humanURL": "https://www.arin.net",
+			"baseURL": ":///",
+			"tags": "Parents",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/parents/master/_listings/arin/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "moltin",
+			"x-api-slug": "moltin",
+			"description": "The comprehensive eCommerce API infrastructure for any platform. Moltin handles data storage and eCommerce logic in the cloud so that you can focus on creating great customer experiences.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/moltin-logo.png",
+			"humanURL": "https://moltin.com",
+			"baseURL": "https://api.moltin.com//",
+			"tags": "Parents",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/parents/master/_listings/moltin/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Shopify",
+			"x-api-slug": "shopify",
+			"description": "Shopify is a commerce platform that allows anyone to easily sell online at a retail location and everywhere in between. It offers a professional online storefront, a payment solution to accept credit cards, and the Shopify POS application to power retail sales.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Shopify-logo.png",
+			"humanURL": "https://www.shopify.com/",
+			"baseURL": "https://DefaultParameterValue:DefaultParameterValue@DefaultParameterValue.myshopify.com//",
+			"tags": "Parents",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/parents/master/_listings/shopify/openapi.md"
+				}
+			]
+		}
+	],
+	"tags": "Parents",
+	"include": [
+		{
+			"name": "Atlassian",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/parents/master/_listings/atlassian/apis.yaml"
+		},
+		{
+			"name": "ARIN",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/parents/master/_listings/arin/apis.yaml"
+		},
+		{
+			"name": "moltin",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/parents/master/_listings/moltin/apis.yaml"
+		},
+		{
+			"name": "Shopify",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/parents/master/_listings/shopify/apis.yaml"
+		}
+	]
+}
